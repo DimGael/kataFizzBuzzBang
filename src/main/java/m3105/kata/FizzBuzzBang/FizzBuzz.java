@@ -1,5 +1,6 @@
 package m3105.kata.FizzBuzzBang;
 
+import m3105.kata.FizzBuzzBang.regles.ListeRegles;
 import m3105.kata.FizzBuzzBang.regles.Regle;
 
 public class FizzBuzz {

@@ -1,11 +1,6 @@
-package m3105.kata.FizzBuzzBang;
+package m3105.kata.FizzBuzzBang.regles;
 
 import java.util.ArrayList;
-
-import m3105.kata.FizzBuzzBang.regles.Bang;
-import m3105.kata.FizzBuzzBang.regles.Buzz;
-import m3105.kata.FizzBuzzBang.regles.Fizz;
-import m3105.kata.FizzBuzzBang.regles.Regle;
 
 public class ListeRegles extends ArrayList<Regle>{
 	
