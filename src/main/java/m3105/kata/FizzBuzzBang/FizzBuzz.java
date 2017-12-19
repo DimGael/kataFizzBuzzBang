@@ -10,7 +10,7 @@ public class FizzBuzz {
 		String result = "";
 		
 		for(Regle regle : listeRegles) {
-			if(!regle.visit(nombre).equals(nombre.toString()))
+			if(!regle.visit(nombre).equals(""))
 				result += regle.visit(nombre);
 		}
 		
@@ -19,16 +19,6 @@ public class FizzBuzz {
 			return nombre.toString();
 		else
 			return result;
-	}
-		
-		
-
-	private boolean isFizzBuzz(Integer nombre) {
-		return 0 == nombre % (3 * 5);
-	}
-
-	private boolean isBuzz(Integer nombre) {
-		return 0 == nombre % 5;
 	}
 
 }
