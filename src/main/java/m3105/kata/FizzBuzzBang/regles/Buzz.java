@@ -1,13 +1,13 @@
 package m3105.kata.FizzBuzzBang.regles;
 
-public class Fizz implements Regle {
+public class Buzz implements Regle {
 
 	@Override
 	public String visit(Integer nombre) {
-		if(0 == nombre % 3)
-			return "fizz";
+		if(0 == nombre % 5)
+			return "buzz";
 		else
-			return nombre.toString();
+			return "";
 	}
 
 }

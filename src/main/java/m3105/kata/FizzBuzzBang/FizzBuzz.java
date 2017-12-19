@@ -5,24 +5,20 @@ import m3105.kata.FizzBuzzBang.regles.Regle;
 public class FizzBuzz {
 	
 	public String donnerLaReponsePour(Integer nombre) {
-		
 		final ListeRegles listeRegles = new ListeRegles();
+		
 		String result = "";
-		boolean noMatch = true;
 		
 		for(Regle regle : listeRegles) {
-			if(regle.visit(nombre) != nombre.toString()) {
+			if(!regle.visit(nombre).equals(nombre.toString()))
 				result += regle.visit(nombre);
-				noMatch = false;
-			}
 		}
 		
-		//Si aucune règle n'a marché pour ce nombre
-		if(noMatch) {
+		//Si aucune règle n'a marché pour ce nombre		
+		if(result.equals("")) 
 			return nombre.toString();
-		}
-		
-		return result;
+		else
+			return result;
 	}
 		
 		
@@ -33,10 +29,6 @@ public class FizzBuzz {
 
 	private boolean isBuzz(Integer nombre) {
 		return 0 == nombre % 5;
-	}
-
-	private boolean isFizz(Integer nombre) {
-		return 0 == nombre % 3;
 	}
 
 }

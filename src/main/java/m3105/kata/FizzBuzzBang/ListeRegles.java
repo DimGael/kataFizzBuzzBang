@@ -2,6 +2,7 @@ package m3105.kata.FizzBuzzBang;
 
 import java.util.ArrayList;
 
+import m3105.kata.FizzBuzzBang.regles.Buzz;
 import m3105.kata.FizzBuzzBang.regles.Fizz;
 import m3105.kata.FizzBuzzBang.regles.Regle;
 
@@ -14,5 +15,6 @@ public class ListeRegles extends ArrayList<Regle>{
 		
 		//Ajout de la règle Fizz
 		this.add(new Fizz());
+		this.add(new Buzz());
 	}
 }
